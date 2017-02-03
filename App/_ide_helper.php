@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.3.29 on 2017-01-23.
+ * Generated for Laravel 5.3.29 on 2017-02-03.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -1690,17 +1690,6 @@ namespace {
         /**
          * Determine if the current user is authenticated.
          *
-         * @return \App\User 
-         * @throws \Illuminate\Auth\AuthenticationException
-         * @static 
-         */
-        public static function authenticate(){
-            return \Illuminate\Auth\SessionGuard::authenticate();
-        }
-        
-        /**
-         * Determine if the current user is authenticated.
-         *
          * @return bool 
          * @static 
          */
@@ -1716,6 +1705,17 @@ namespace {
          */
         public static function guest(){
             return \Illuminate\Auth\SessionGuard::guest();
+        }
+        
+        /**
+         * Determine if the current user is authenticated.
+         *
+         * @return \App\User 
+         * @throws \Illuminate\Auth\AuthenticationException
+         * @static 
+         */
+        public static function authenticate(){
+            return \Illuminate\Auth\SessionGuard::authenticate();
         }
         
     }
@@ -11900,6 +11900,11 @@ namespace {
         public static function getNames(){
             return \Illuminate\View\Factory::getNames();
         }
+        
+    }
+
+
+    class Uuid extends \Webpatser\Uuid\Uuid{
         
     }
 

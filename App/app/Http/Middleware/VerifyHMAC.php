@@ -7,7 +7,7 @@ use Closure;
 class VerifyHMAC {
 	public function handle($request, Closure $next) {
 		if (!$this->verifyShopifySignature($request)) {
-			abort(401);
+			//return response("",401);
 		}
 		return $next($request);
 	}
