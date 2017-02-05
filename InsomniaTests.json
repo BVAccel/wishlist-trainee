@@ -1,0 +1,140 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2017-02-05T03:15:52.943Z",
+	"__export_source": "insomnia.desktop.app:v4.0.13",
+	"resources": [
+		{
+			"_id": "wrk_82d93020c7fa43f7b1b9d56c3f039e55",
+			"parentId": null,
+			"modified": 1486259770566,
+			"created": 1486259770566,
+			"name": "Wishlist",
+			"description": "",
+			"certificates": [],
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_7fa2803ec2db45e3a69621c2d73c601f",
+			"parentId": "wrk_82d93020c7fa43f7b1b9d56c3f039e55",
+			"modified": 1486259966790,
+			"created": 1486259966790,
+			"name": "Base Environment",
+			"data": {},
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_22ca301eaa62428a93f54ffc741f2eac",
+			"parentId": "wrk_82d93020c7fa43f7b1b9d56c3f039e55",
+			"modified": 1486264496795,
+			"created": 1486259966827,
+			"name": "Default Jar",
+			"cookies": [
+				{
+					"creation": "2017-02-05T02:58:44.386Z",
+					"key": "wishlistToken",
+					"value": "c6f4fa62-a469-43a3-ad01-e61218f09a03",
+					"expires": "2022-02-04T02:58:44.000Z",
+					"maxAge": 157680000,
+					"domain": "rcfs.fwd.wf",
+					"path": "/",
+					"httpOnly": true,
+					"hostOnly": true,
+					"lastAccessed": "2017-02-05T03:14:56.194Z"
+				}
+			],
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_1457dcbdd02a42298579b111aa32bcb5",
+			"parentId": "wrk_82d93020c7fa43f7b1b9d56c3f039e55",
+			"modified": 1486263744305,
+			"created": 1486263719391,
+			"url": "https://rcfs.fwd.wf/api/v1/wishlist/3",
+			"name": "Get Wishlist Detail",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1486263719391,
+			"_type": "request"
+		},
+		{
+			"_id": "req_2f88c8d01bb746a5b5610c3600d7808c",
+			"parentId": "wrk_82d93020c7fa43f7b1b9d56c3f039e55",
+			"modified": 1486263654948,
+			"created": 1486259911785,
+			"url": "https://rcfs.fwd.wf/api/v1/wishlist",
+			"name": "Get Wishlists",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1486260235250,
+			"_type": "request"
+		},
+		{
+			"_id": "req_4ccd37e8b2604a69a39e0df689dc7487",
+			"parentId": "wrk_82d93020c7fa43f7b1b9d56c3f039e55",
+			"modified": 1486264418413,
+			"created": 1486264405419,
+			"url": "https://rcfs.fwd.wf/api/v1/wishlist/3/product/TESTVARIANTID",
+			"name": "Add Variant",
+			"method": "POST",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1486263936609,
+			"_type": "request"
+		},
+		{
+			"_id": "req_90903a8da1ac48929870918877991eae",
+			"parentId": "wrk_82d93020c7fa43f7b1b9d56c3f039e55",
+			"modified": 1486264306013,
+			"created": 1486263936610,
+			"url": "https://rcfs.fwd.wf/api/v1/wishlist/3/product/TESTPRODUCTID",
+			"name": "Add Product",
+			"method": "POST",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1486263936610,
+			"_type": "request"
+		},
+		{
+			"_id": "req_b4fcdc9307764a228e0033a2aefd7e0f",
+			"parentId": "wrk_82d93020c7fa43f7b1b9d56c3f039e55",
+			"modified": 1486263656428,
+			"created": 1486260235200,
+			"url": "https://rcfs.fwd.wf/api/v1/wishlist",
+			"name": "Create Wishlist",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\" : \"Test Wishlist {{ range(0,100) | random }}\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1486260235200,
+			"_type": "request"
+		}
+	]
+}

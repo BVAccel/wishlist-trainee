@@ -32,8 +32,8 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 	    'verify' => [
-		    'verify.hmac',
-		    'verify.user',
+	    	'verify.hmac',
+		    'verify.user'
 	    ],
         'api' => [
             'throttle:60,1',

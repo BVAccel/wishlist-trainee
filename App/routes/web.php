@@ -16,13 +16,3 @@ Route::get('/', function () {
 });
 Auth::routes();
 Route::get('/home', 'HomeController@index');
-
-Route::group( ['prefix' => 'api'], function() {
-	Route::group( ['prefix' => 'v1', 'middleware' => 'verify' ], function() {
-		Route::get( 'setup', 'UserController@create' );
-		Route::post( 'wishlist', 'WishListController@create' );
-		Route::get( 'wishlist', 'WishListController@view');
-		Route::post( 'wishlist/{id}/product/{product_id}', 'WishListController@addItem' );
-		Route::post( 'wishlist/{id}/variant/{variant_id}', 'WishListController@addItemVariant' );
-	});
-});
